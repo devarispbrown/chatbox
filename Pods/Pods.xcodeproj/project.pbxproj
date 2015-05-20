@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ACC4E473DC17B31120A8E77 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359536536D8C4C3CF7B15B6F /* SystemConfiguration.framework */; };
+		0FD5BD71B983F96B1B4337C0 /* Parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F6CF6789C1743613D6D8A0 /* Parse.h */; };
+		11DAE40B2A3F73407BDBD44B /* BFTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D99396D7E2FAB442FD56EEF8 /* BFTask.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		177C02D5EC5D094F5454EF68 /* PFTwitterUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E7485C6ADB825E35B46BE9F9 /* PFTwitterUtils.h */; };
+		17CED6E212109BEE43A05160 /* PFPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 442F01258E434A08E98A30C1 /* PFPush.h */; };
+		1F5C94CA613F076D15AA1958 /* PFObject+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = AD09D0E28C63A35390D9CB99 /* PFObject+Subclass.h */; };
+		231349747B145E92FA97E257 /* PF_Twitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E4D3146BF8D741EEC056FF /* PF_Twitter.h */; };
+		2E6D662901E3F7B1CE9EABE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C8FEC2FAFD22EAEE84BD15 /* CoreGraphics.framework */; };
+		443E0F1496A1DA77A8A810F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9281B2217B2CDC175D1FB5D /* Foundation.framework */; };
+		443E4F00A507943272A7F8FB /* Bolts.m in Sources */ = {isa = PBXBuildFile; fileRef = EFED4DA7169FEF6B6CD00CB4 /* Bolts.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		46E6FE7DB4D7EBA784035A84 /* PFUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E4E2FA4AC0F8537CE363C93 /* PFUser.h */; };
+		46F640497FC873DAB276EBFB /* PFPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = D86B448B9FDD2ACB7D038989 /* PFPurchase.h */; };
+		4C7D22B9597D85621A2EE1E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9281B2217B2CDC175D1FB5D /* Foundation.framework */; };
+		51EFDF198623CD21F3BAA699 /* Pods-chatbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C398EC5F8B2C4E0156B46F /* Pods-chatbox-dummy.m */; };
+		534C9F1C3A56706A4FECB8DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F9C447C541E7BE4186A20C /* QuartzCore.framework */; };
+		579C7704BBEE8E16A499B140 /* PFFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 59368F71B3AB95146BB9A9BD /* PFFile.h */; };
+		5B7A2FAAF8DFDEEFE06C14C3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022D9BB1AD46E59E7B3BFEE2 /* CoreLocation.framework */; };
+		61BB86AF7C8DCA8F8383E390 /* BFTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 606C3605916850627B06444F /* BFTask.h */; };
+		68C0E073F0E508D9606DB67E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2150E3D5D65992C40C16FB4C /* MobileCoreServices.framework */; };
+		76475BEB877505B9854E9A34 /* PFGeoPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CF66532712BB4266043395D /* PFGeoPoint.h */; };
+		76A63DDB8BA3C80F8FC25E32 /* PFConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C10CC2C5F516FD14BF979E3F /* PFConfig.h */; };
+		8080EACD33774A66AC34503F /* PFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A98FD82C68EC97A2EBB24C4E /* PFConstants.h */; };
+		81702BBF6B3C91999B34DB77 /* BFExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D82ECA474343D639A71355 /* BFExecutor.h */; };
+		8558E0AB0B3FD69B7905E2F1 /* PFCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = CD43C15EDF58874BCB5D19D7 /* PFCloud.h */; };
+		866A6AE4BF2932E7E5CCF5CC /* Pods-chatbox-Bolts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3F2E400332BFAD4AEE0A7 /* Pods-chatbox-Bolts-dummy.m */; };
+		8DC1466FDFFD4707CB964B5F /* PFNullability.h in Headers */ = {isa = PBXBuildFile; fileRef = E140323C7018A01C6720F168 /* PFNullability.h */; };
+		8F0C60228AA879A455B6613E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9281B2217B2CDC175D1FB5D /* Foundation.framework */; };
+		91D6FAC8BE6EEF836E925840 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = C60E34271C0E9484FD563807 /* Empty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97CC36CF91485117127F8CEA /* PFQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2DD2CB8C6C7C06C8F31D5A /* PFQuery.h */; };
+		9B331FC8EBD1A35B7FC7C8B6 /* Bolts.h in Headers */ = {isa = PBXBuildFile; fileRef = 809CE444979A923B21C3C8E0 /* Bolts.h */; };
+		A1E097D32706FD824554977D /* PFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A43654500E0A0181091E558B /* PFNetworkActivityIndicatorManager.h */; };
+		A225307942E503FB2C996EB7 /* BFExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A62E8E779F28DB865FE1FB /* BFExecutor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A42FF71C10BCF5CA60792A43 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C720556EAA0EA67553453A25 /* CFNetwork.framework */; };
+		AD1F2AEB0611E0B068C33C8C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33D6D213537CEC4F554A355 /* StoreKit.framework */; };
+		AE441A282C397B09A92755D5 /* PFRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3125C44B58B13CD53864843D /* PFRelation.h */; };
+		BC44812C615B875BE2236A02 /* BoltsVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 7358E6A217111975EFFB9FA9 /* BoltsVersion.h */; };
+		BD12C7B92AD04D8E394C76C3 /* PFAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DF373077F97E5CC0D09EF8C /* PFAnalytics.h */; };
+		BE6F04DDDDA3744DC4E29D90 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5FB5BA637146A39CF134D6 /* AudioToolbox.framework */; };
+		C5C11A91866E9BFD68975ADF /* PFACL.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F92BEC71A83D70022D600 /* PFACL.h */; };
+		CAA27FC1B983B6280F8CAE32 /* PFSubclassing.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AA69B200365CBCEC4CA820 /* PFSubclassing.h */; };
+		CC1EA6DE8A7FE2E0DB5F4FC4 /* BFTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E221495D346F72AEA411B4BD /* BFTaskCompletionSource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D08886CE09619F05FAFA19D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4EBBAFD7526F1A7E2F000 /* Security.framework */; };
+		D2F024D1CC55A572EAA9CEF8 /* PFSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F84020F5776094B60F90F2 /* PFSession.h */; };
+		D6869C7BC796E010B1D5627C /* Pods-chatbox-Parse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B81015CB9148A30F5CB82 /* Pods-chatbox-Parse-dummy.m */; };
+		E27EA766735429E6CC2C1408 /* PFAnonymousUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B937C47CBCA482D0FC029463 /* PFAnonymousUtils.h */; };
+		E65E9067A4DA9A1E3C6C62AF /* PFProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1E4D5C6C8BDAA2E427F5B4 /* PFProduct.h */; };
+		EB6BBE4B1A98A206825F7094 /* BFTaskCompletionSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 66289707BAD116833AFFA97F /* BFTaskCompletionSource.h */; };
+		EF4A9C5581969310B1DF2453 /* PFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 90DD30D46C8514FA0E40C24E /* PFObject.h */; };
+		F2D08277887677F5AC58E54E /* PFInstallation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CC1D21632CE19B049175654 /* PFInstallation.h */; };
+		F5E5F9162E46EFC260139A29 /* PFRole.h in Headers */ = {isa = PBXBuildFile; fileRef = 969BD00EF6B2B2C1DCB4DC28 /* PFRole.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B99386FF4A74953CCF44442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F778C74DCDDDDA212B05B21D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5B6A4D955A88790B0DCA113;
+			remoteInfo = "Pods-chatbox-Bolts";
+		};
+		9A52AF264A9666DDF917F606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F778C74DCDDDDA212B05B21D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C41E2035DA202A0EDF9CBEF3;
+			remoteInfo = "Pods-chatbox-Parse";
+		};
+		E05ED9F083FCD155AD615BB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F778C74DCDDDDA212B05B21D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5B6A4D955A88790B0DCA113;
+			remoteInfo = "Pods-chatbox-Bolts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022D9BB1AD46E59E7B3BFEE2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		07CED74F3672D92A74619F73 /* libPods-chatbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chatbox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D2DD2CB8C6C7C06C8F31D5A /* PFQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFQuery.h; path = Parse.framework/Headers/PFQuery.h; sourceTree = "<group>"; };
+		1DA81A0835948E160DBF8B7A /* Pods-chatbox-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-chatbox-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2150E3D5D65992C40C16FB4C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		25F6CF6789C1743613D6D8A0 /* Parse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Parse.h; path = Parse.framework/Headers/Parse.h; sourceTree = "<group>"; };
+		2CC1D21632CE19B049175654 /* PFInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFInstallation.h; path = Parse.framework/Headers/PFInstallation.h; sourceTree = "<group>"; };
+		2DF373077F97E5CC0D09EF8C /* PFAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnalytics.h; path = Parse.framework/Headers/PFAnalytics.h; sourceTree = "<group>"; };
+		3125C44B58B13CD53864843D /* PFRelation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRelation.h; path = Parse.framework/Headers/PFRelation.h; sourceTree = "<group>"; };
+		32F84020F5776094B60F90F2 /* PFSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSession.h; path = Parse.framework/Headers/PFSession.h; sourceTree = "<group>"; };
+		33B9278A047088AAA9AEB141 /* Pods-chatbox-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-chatbox-environment.h"; sourceTree = "<group>"; };
+		359536536D8C4C3CF7B15B6F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		35D82ECA474343D639A71355 /* BFExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFExecutor.h; path = Bolts/Common/BFExecutor.h; sourceTree = "<group>"; };
+		3CF66532712BB4266043395D /* PFGeoPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFGeoPoint.h; path = Parse.framework/Headers/PFGeoPoint.h; sourceTree = "<group>"; };
+		3D1E4D5C6C8BDAA2E427F5B4 /* PFProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFProduct.h; path = Parse.framework/Headers/PFProduct.h; sourceTree = "<group>"; };
+		3E4E2FA4AC0F8537CE363C93 /* PFUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFUser.h; path = Parse.framework/Headers/PFUser.h; sourceTree = "<group>"; };
+		3F7EFB7906E6399C4995D5FF /* Pods-chatbox-Parse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-chatbox-Parse.xcconfig"; sourceTree = "<group>"; };
+		41F9C447C541E7BE4186A20C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		442F01258E434A08E98A30C1 /* PFPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPush.h; path = Parse.framework/Headers/PFPush.h; sourceTree = "<group>"; };
+		48AA69B200365CBCEC4CA820 /* PFSubclassing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSubclassing.h; path = Parse.framework/Headers/PFSubclassing.h; sourceTree = "<group>"; };
+		524E3FC4C83C57734C0DA03C /* Pods-chatbox-Parse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-chatbox-Parse-prefix.pch"; sourceTree = "<group>"; };
+		5541BC78272DC46DE0BC1902 /* libParse.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libParse.a; sourceTree = "<group>"; };
+		59368F71B3AB95146BB9A9BD /* PFFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFFile.h; path = Parse.framework/Headers/PFFile.h; sourceTree = "<group>"; };
+		606C3605916850627B06444F /* BFTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTask.h; path = Bolts/Common/BFTask.h; sourceTree = "<group>"; };
+		64E4D3146BF8D741EEC056FF /* PF_Twitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PF_Twitter.h; path = Parse.framework/Headers/PF_Twitter.h; sourceTree = "<group>"; };
+		66289707BAD116833AFFA97F /* BFTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTaskCompletionSource.h; path = Bolts/Common/BFTaskCompletionSource.h; sourceTree = "<group>"; };
+		6C0E784461C727DD477DF4CE /* Pods-chatbox-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-chatbox-resources.sh"; sourceTree = "<group>"; };
+		6E6B6E435FC70E97DEDB3526 /* Pods-chatbox-Parse-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-chatbox-Parse-Private.xcconfig"; sourceTree = "<group>"; };
+		7358E6A217111975EFFB9FA9 /* BoltsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BoltsVersion.h; path = Bolts/Common/BoltsVersion.h; sourceTree = "<group>"; };
+		7AEDD4C13BB89ED7665EF661 /* Pods-chatbox-Bolts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-chatbox-Bolts-prefix.pch"; sourceTree = "<group>"; };
+		809CE444979A923B21C3C8E0 /* Bolts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bolts.h; path = Bolts/Common/Bolts.h; sourceTree = "<group>"; };
+		8C475D7A28DE9A5237F2579F /* Pods-chatbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-chatbox.release.xcconfig"; sourceTree = "<group>"; };
+		8E2B81015CB9148A30F5CB82 /* Pods-chatbox-Parse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-chatbox-Parse-dummy.m"; sourceTree = "<group>"; };
+		90DD30D46C8514FA0E40C24E /* PFObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObject.h; path = Parse.framework/Headers/PFObject.h; sourceTree = "<group>"; };
+		969BD00EF6B2B2C1DCB4DC28 /* PFRole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRole.h; path = Parse.framework/Headers/PFRole.h; sourceTree = "<group>"; };
+		97FE69187A9BD42DBB0F20E5 /* Pods-chatbox-Bolts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-chatbox-Bolts.xcconfig"; sourceTree = "<group>"; };
+		A1A62E8E779F28DB865FE1FB /* BFExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFExecutor.m; path = Bolts/Common/BFExecutor.m; sourceTree = "<group>"; };
+		A1F4EBBAFD7526F1A7E2F000 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		A43654500E0A0181091E558B /* PFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFNetworkActivityIndicatorManager.h; path = Parse.framework/Headers/PFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		A90D23254C068BC5E3BDE29D /* Pods-chatbox-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-chatbox-acknowledgements.plist"; sourceTree = "<group>"; };
+		A98FD82C68EC97A2EBB24C4E /* PFConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFConstants.h; path = Parse.framework/Headers/PFConstants.h; sourceTree = "<group>"; };
+		AD09D0E28C63A35390D9CB99 /* PFObject+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFObject+Subclass.h"; path = "Parse.framework/Headers/PFObject+Subclass.h"; sourceTree = "<group>"; };
+		B59F92BEC71A83D70022D600 /* PFACL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFACL.h; path = Parse.framework/Headers/PFACL.h; sourceTree = "<group>"; };
+		B73E09B49EC48AD1551EAF73 /* libPods-chatbox-Parse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chatbox-Parse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B937C47CBCA482D0FC029463 /* PFAnonymousUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnonymousUtils.h; path = Parse.framework/Headers/PFAnonymousUtils.h; sourceTree = "<group>"; };
+		BB2CD284F8D62B9476CF40CE /* Pods-chatbox-Bolts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-chatbox-Bolts-Private.xcconfig"; sourceTree = "<group>"; };
+		BE83859DE09DACA610527539 /* libPods-chatbox-Bolts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chatbox-Bolts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10CC2C5F516FD14BF979E3F /* PFConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFConfig.h; path = Parse.framework/Headers/PFConfig.h; sourceTree = "<group>"; };
+		C2C8FEC2FAFD22EAEE84BD15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		C60E34271C0E9484FD563807 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
+		C720556EAA0EA67553453A25 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		C7C398EC5F8B2C4E0156B46F /* Pods-chatbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-chatbox-dummy.m"; sourceTree = "<group>"; };
+		CD43C15EDF58874BCB5D19D7 /* PFCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFCloud.h; path = Parse.framework/Headers/PFCloud.h; sourceTree = "<group>"; };
+		D33D6D213537CEC4F554A355 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		D86B448B9FDD2ACB7D038989 /* PFPurchase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPurchase.h; path = Parse.framework/Headers/PFPurchase.h; sourceTree = "<group>"; };
+		D99396D7E2FAB442FD56EEF8 /* BFTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTask.m; path = Bolts/Common/BFTask.m; sourceTree = "<group>"; };
+		E140323C7018A01C6720F168 /* PFNullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFNullability.h; path = Parse.framework/Headers/PFNullability.h; sourceTree = "<group>"; };
+		E221495D346F72AEA411B4BD /* BFTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTaskCompletionSource.m; path = Bolts/Common/BFTaskCompletionSource.m; sourceTree = "<group>"; };
+		E6620500C33057869752F95C /* Pods-chatbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-chatbox.debug.xcconfig"; sourceTree = "<group>"; };
+		E7485C6ADB825E35B46BE9F9 /* PFTwitterUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFTwitterUtils.h; path = Parse.framework/Headers/PFTwitterUtils.h; sourceTree = "<group>"; };
+		EFED4DA7169FEF6B6CD00CB4 /* Bolts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bolts.m; path = Bolts/Common/Bolts.m; sourceTree = "<group>"; };
+		F1A3F2E400332BFAD4AEE0A7 /* Pods-chatbox-Bolts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-chatbox-Bolts-dummy.m"; sourceTree = "<group>"; };
+		F9281B2217B2CDC175D1FB5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FA5FB5BA637146A39CF134D6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		FFBA48E1140FFAB4FBE3BA7C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A52B248B7F86C452FBABCCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0C60228AA879A455B6613E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD44E8FEFBB068D63F588EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6F04DDDDA3744DC4E29D90 /* AudioToolbox.framework in Frameworks */,
+				A42FF71C10BCF5CA60792A43 /* CFNetwork.framework in Frameworks */,
+				2E6D662901E3F7B1CE9EABE5 /* CoreGraphics.framework in Frameworks */,
+				5B7A2FAAF8DFDEEFE06C14C3 /* CoreLocation.framework in Frameworks */,
+				4C7D22B9597D85621A2EE1E6 /* Foundation.framework in Frameworks */,
+				68C0E073F0E508D9606DB67E /* MobileCoreServices.framework in Frameworks */,
+				534C9F1C3A56706A4FECB8DF /* QuartzCore.framework in Frameworks */,
+				D08886CE09619F05FAFA19D0 /* Security.framework in Frameworks */,
+				AD1F2AEB0611E0B068C33C8C /* StoreKit.framework in Frameworks */,
+				0ACC4E473DC17B31120A8E77 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD99516A0E9ACDE61516D218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443E0F1496A1DA77A8A810F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03B053BA91953F071621740A /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				C60E34271C0E9484FD563807 /* Empty.m */,
+				B59F92BEC71A83D70022D600 /* PFACL.h */,
+				2DF373077F97E5CC0D09EF8C /* PFAnalytics.h */,
+				B937C47CBCA482D0FC029463 /* PFAnonymousUtils.h */,
+				CD43C15EDF58874BCB5D19D7 /* PFCloud.h */,
+				C10CC2C5F516FD14BF979E3F /* PFConfig.h */,
+				A98FD82C68EC97A2EBB24C4E /* PFConstants.h */,
+				59368F71B3AB95146BB9A9BD /* PFFile.h */,
+				3CF66532712BB4266043395D /* PFGeoPoint.h */,
+				2CC1D21632CE19B049175654 /* PFInstallation.h */,
+				A43654500E0A0181091E558B /* PFNetworkActivityIndicatorManager.h */,
+				E140323C7018A01C6720F168 /* PFNullability.h */,
+				90DD30D46C8514FA0E40C24E /* PFObject.h */,
+				AD09D0E28C63A35390D9CB99 /* PFObject+Subclass.h */,
+				3D1E4D5C6C8BDAA2E427F5B4 /* PFProduct.h */,
+				D86B448B9FDD2ACB7D038989 /* PFPurchase.h */,
+				442F01258E434A08E98A30C1 /* PFPush.h */,
+				1D2DD2CB8C6C7C06C8F31D5A /* PFQuery.h */,
+				3125C44B58B13CD53864843D /* PFRelation.h */,
+				969BD00EF6B2B2C1DCB4DC28 /* PFRole.h */,
+				32F84020F5776094B60F90F2 /* PFSession.h */,
+				48AA69B200365CBCEC4CA820 /* PFSubclassing.h */,
+				E7485C6ADB825E35B46BE9F9 /* PFTwitterUtils.h */,
+				3E4E2FA4AC0F8537CE363C93 /* PFUser.h */,
+				64E4D3146BF8D741EEC056FF /* PF_Twitter.h */,
+				25F6CF6789C1743613D6D8A0 /* Parse.h */,
+				D2DFB0CB6C969C9045AFB7DB /* Frameworks */,
+				BE650C1EFF22F9192E24FA8B /* Support Files */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		09E478BDC75BB5DB25681128 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FA5FB5BA637146A39CF134D6 /* AudioToolbox.framework */,
+				C720556EAA0EA67553453A25 /* CFNetwork.framework */,
+				C2C8FEC2FAFD22EAEE84BD15 /* CoreGraphics.framework */,
+				022D9BB1AD46E59E7B3BFEE2 /* CoreLocation.framework */,
+				F9281B2217B2CDC175D1FB5D /* Foundation.framework */,
+				2150E3D5D65992C40C16FB4C /* MobileCoreServices.framework */,
+				41F9C447C541E7BE4186A20C /* QuartzCore.framework */,
+				A1F4EBBAFD7526F1A7E2F000 /* Security.framework */,
+				D33D6D213537CEC4F554A355 /* StoreKit.framework */,
+				359536536D8C4C3CF7B15B6F /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		0CB14D917AEA0139C5249456 = {
+			isa = PBXGroup;
+			children = (
+				FFBA48E1140FFAB4FBE3BA7C /* Podfile */,
+				EA32808A87B87116652D4A4B /* Frameworks */,
+				914CD04BD0354A5D300806BB /* Pods */,
+				439D826460DA0B741D3DC9B7 /* Products */,
+				64669B564867A8E68135208C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		166B5863B29561DC773E9AE5 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				35D82ECA474343D639A71355 /* BFExecutor.h */,
+				A1A62E8E779F28DB865FE1FB /* BFExecutor.m */,
+				606C3605916850627B06444F /* BFTask.h */,
+				D99396D7E2FAB442FD56EEF8 /* BFTask.m */,
+				66289707BAD116833AFFA97F /* BFTaskCompletionSource.h */,
+				E221495D346F72AEA411B4BD /* BFTaskCompletionSource.m */,
+				809CE444979A923B21C3C8E0 /* Bolts.h */,
+				EFED4DA7169FEF6B6CD00CB4 /* Bolts.m */,
+				7358E6A217111975EFFB9FA9 /* BoltsVersion.h */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		439D826460DA0B741D3DC9B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07CED74F3672D92A74619F73 /* libPods-chatbox.a */,
+				BE83859DE09DACA610527539 /* libPods-chatbox-Bolts.a */,
+				B73E09B49EC48AD1551EAF73 /* libPods-chatbox-Parse.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64669B564867A8E68135208C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65B0FCCB80F45569FEBE1033 /* Pods-chatbox */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		64A383588789DE63FDA95EC0 /* Bolts */ = {
+			isa = PBXGroup;
+			children = (
+				9372312AE2D40A28AECC915C /* Support Files */,
+				166B5863B29561DC773E9AE5 /* Tasks */,
+			);
+			path = Bolts;
+			sourceTree = "<group>";
+		};
+		65B0FCCB80F45569FEBE1033 /* Pods-chatbox */ = {
+			isa = PBXGroup;
+			children = (
+				1DA81A0835948E160DBF8B7A /* Pods-chatbox-acknowledgements.markdown */,
+				A90D23254C068BC5E3BDE29D /* Pods-chatbox-acknowledgements.plist */,
+				C7C398EC5F8B2C4E0156B46F /* Pods-chatbox-dummy.m */,
+				33B9278A047088AAA9AEB141 /* Pods-chatbox-environment.h */,
+				6C0E784461C727DD477DF4CE /* Pods-chatbox-resources.sh */,
+				E6620500C33057869752F95C /* Pods-chatbox.debug.xcconfig */,
+				8C475D7A28DE9A5237F2579F /* Pods-chatbox.release.xcconfig */,
+			);
+			name = "Pods-chatbox";
+			path = "Target Support Files/Pods-chatbox";
+			sourceTree = "<group>";
+		};
+		914CD04BD0354A5D300806BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64A383588789DE63FDA95EC0 /* Bolts */,
+				03B053BA91953F071621740A /* Parse */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9372312AE2D40A28AECC915C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97FE69187A9BD42DBB0F20E5 /* Pods-chatbox-Bolts.xcconfig */,
+				BB2CD284F8D62B9476CF40CE /* Pods-chatbox-Bolts-Private.xcconfig */,
+				F1A3F2E400332BFAD4AEE0A7 /* Pods-chatbox-Bolts-dummy.m */,
+				7AEDD4C13BB89ED7665EF661 /* Pods-chatbox-Bolts-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-chatbox-Bolts";
+			sourceTree = "<group>";
+		};
+		BE650C1EFF22F9192E24FA8B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F7EFB7906E6399C4995D5FF /* Pods-chatbox-Parse.xcconfig */,
+				6E6B6E435FC70E97DEDB3526 /* Pods-chatbox-Parse-Private.xcconfig */,
+				8E2B81015CB9148A30F5CB82 /* Pods-chatbox-Parse-dummy.m */,
+				524E3FC4C83C57734C0DA03C /* Pods-chatbox-Parse-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-chatbox-Parse";
+			sourceTree = "<group>";
+		};
+		D2DFB0CB6C969C9045AFB7DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5541BC78272DC46DE0BC1902 /* libParse.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA32808A87B87116652D4A4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09E478BDC75BB5DB25681128 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0057BF8306B94B29DBC0FD87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81702BBF6B3C91999B34DB77 /* BFExecutor.h in Headers */,
+				61BB86AF7C8DCA8F8383E390 /* BFTask.h in Headers */,
+				EB6BBE4B1A98A206825F7094 /* BFTaskCompletionSource.h in Headers */,
+				9B331FC8EBD1A35B7FC7C8B6 /* Bolts.h in Headers */,
+				BC44812C615B875BE2236A02 /* BoltsVersion.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92900D1858B3E2E70858ABF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C11A91866E9BFD68975ADF /* PFACL.h in Headers */,
+				BD12C7B92AD04D8E394C76C3 /* PFAnalytics.h in Headers */,
+				E27EA766735429E6CC2C1408 /* PFAnonymousUtils.h in Headers */,
+				8558E0AB0B3FD69B7905E2F1 /* PFCloud.h in Headers */,
+				76A63DDB8BA3C80F8FC25E32 /* PFConfig.h in Headers */,
+				8080EACD33774A66AC34503F /* PFConstants.h in Headers */,
+				579C7704BBEE8E16A499B140 /* PFFile.h in Headers */,
+				76475BEB877505B9854E9A34 /* PFGeoPoint.h in Headers */,
+				F2D08277887677F5AC58E54E /* PFInstallation.h in Headers */,
+				A1E097D32706FD824554977D /* PFNetworkActivityIndicatorManager.h in Headers */,
+				8DC1466FDFFD4707CB964B5F /* PFNullability.h in Headers */,
+				1F5C94CA613F076D15AA1958 /* PFObject+Subclass.h in Headers */,
+				EF4A9C5581969310B1DF2453 /* PFObject.h in Headers */,
+				E65E9067A4DA9A1E3C6C62AF /* PFProduct.h in Headers */,
+				46F640497FC873DAB276EBFB /* PFPurchase.h in Headers */,
+				17CED6E212109BEE43A05160 /* PFPush.h in Headers */,
+				97CC36CF91485117127F8CEA /* PFQuery.h in Headers */,
+				AE441A282C397B09A92755D5 /* PFRelation.h in Headers */,
+				F5E5F9162E46EFC260139A29 /* PFRole.h in Headers */,
+				D2F024D1CC55A572EAA9CEF8 /* PFSession.h in Headers */,
+				CAA27FC1B983B6280F8CAE32 /* PFSubclassing.h in Headers */,
+				177C02D5EC5D094F5454EF68 /* PFTwitterUtils.h in Headers */,
+				46E6FE7DB4D7EBA784035A84 /* PFUser.h in Headers */,
+				231349747B145E92FA97E257 /* PF_Twitter.h in Headers */,
+				0FD5BD71B983F96B1B4337C0 /* Parse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B49CFE18E351DF232FB6793F /* Pods-chatbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96BC012669437B71970C6B5E /* Build configuration list for PBXNativeTarget "Pods-chatbox" */;
+			buildPhases = (
+				3832A30B4129DDB0A75D8140 /* Sources */,
+				3A52B248B7F86C452FBABCCF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CB8BD15F2C9CD996860E9E3 /* PBXTargetDependency */,
+				6886AEFEBEE37F6233B21144 /* PBXTargetDependency */,
+			);
+			name = "Pods-chatbox";
+			productName = "Pods-chatbox";
+			productReference = 07CED74F3672D92A74619F73 /* libPods-chatbox.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C41E2035DA202A0EDF9CBEF3 /* Pods-chatbox-Parse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C45DDF29D1DBEAF5E24DCE04 /* Build configuration list for PBXNativeTarget "Pods-chatbox-Parse" */;
+			buildPhases = (
+				27DDA400F9EA097E2E77FD08 /* Sources */,
+				DD44E8FEFBB068D63F588EF2 /* Frameworks */,
+				92900D1858B3E2E70858ABF6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E52A3618CE2813FF3732380 /* PBXTargetDependency */,
+			);
+			name = "Pods-chatbox-Parse";
+			productName = "Pods-chatbox-Parse";
+			productReference = B73E09B49EC48AD1551EAF73 /* libPods-chatbox-Parse.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F5B6A4D955A88790B0DCA113 /* Pods-chatbox-Bolts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6269B6419F290D10B276AA3D /* Build configuration list for PBXNativeTarget "Pods-chatbox-Bolts" */;
+			buildPhases = (
+				90522D2D827DABB2116CE88F /* Sources */,
+				DD99516A0E9ACDE61516D218 /* Frameworks */,
+				0057BF8306B94B29DBC0FD87 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-chatbox-Bolts";
+			productName = "Pods-chatbox-Bolts";
+			productReference = BE83859DE09DACA610527539 /* libPods-chatbox-Bolts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F778C74DCDDDDA212B05B21D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 6C740A4650CC1944EE4DF24E /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0CB14D917AEA0139C5249456;
+			productRefGroup = 439D826460DA0B741D3DC9B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B49CFE18E351DF232FB6793F /* Pods-chatbox */,
+				F5B6A4D955A88790B0DCA113 /* Pods-chatbox-Bolts */,
+				C41E2035DA202A0EDF9CBEF3 /* Pods-chatbox-Parse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27DDA400F9EA097E2E77FD08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D6FAC8BE6EEF836E925840 /* Empty.m in Sources */,
+				D6869C7BC796E010B1D5627C /* Pods-chatbox-Parse-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3832A30B4129DDB0A75D8140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EFDF198623CD21F3BAA699 /* Pods-chatbox-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90522D2D827DABB2116CE88F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A225307942E503FB2C996EB7 /* BFExecutor.m in Sources */,
+				11DAE40B2A3F73407BDBD44B /* BFTask.m in Sources */,
+				CC1EA6DE8A7FE2E0DB5F4FC4 /* BFTaskCompletionSource.m in Sources */,
+				443E4F00A507943272A7F8FB /* Bolts.m in Sources */,
+				866A6AE4BF2932E7E5CCF5CC /* Pods-chatbox-Bolts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CB8BD15F2C9CD996860E9E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-chatbox-Bolts";
+			target = F5B6A4D955A88790B0DCA113 /* Pods-chatbox-Bolts */;
+			targetProxy = 0B99386FF4A74953CCF44442 /* PBXContainerItemProxy */;
+		};
+		3E52A3618CE2813FF3732380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-chatbox-Bolts";
+			target = F5B6A4D955A88790B0DCA113 /* Pods-chatbox-Bolts */;
+			targetProxy = E05ED9F083FCD155AD615BB7 /* PBXContainerItemProxy */;
+		};
+		6886AEFEBEE37F6233B21144 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-chatbox-Parse";
+			target = C41E2035DA202A0EDF9CBEF3 /* Pods-chatbox-Parse */;
+			targetProxy = 9A52AF264A9666DDF917F606 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01B92679036D95F14DA018BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2D852F44918362660D061C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C475D7A28DE9A5237F2579F /* Pods-chatbox.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3C103D9D5209D4E74B401C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6B6E435FC70E97DEDB3526 /* Pods-chatbox-Parse-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-chatbox-Parse/Pods-chatbox-Parse-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7245F07FBE12B58BD742695C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB2CD284F8D62B9476CF40CE /* Pods-chatbox-Bolts-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-chatbox-Bolts/Pods-chatbox-Bolts-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		961CEFAEAB7421B65950E10D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6620500C33057869752F95C /* Pods-chatbox.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		96597C158529242A6E37EF32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8F637DF5CBC3C0BFF976C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB2CD284F8D62B9476CF40CE /* Pods-chatbox-Bolts-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-chatbox-Bolts/Pods-chatbox-Bolts-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E993E82DD46938CB92DBD653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6B6E435FC70E97DEDB3526 /* Pods-chatbox-Parse-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-chatbox-Parse/Pods-chatbox-Parse-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6269B6419F290D10B276AA3D /* Build configuration list for PBXNativeTarget "Pods-chatbox-Bolts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F637DF5CBC3C0BFF976C6A /* Debug */,
+				7245F07FBE12B58BD742695C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C740A4650CC1944EE4DF24E /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B92679036D95F14DA018BD /* Debug */,
+				96597C158529242A6E37EF32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96BC012669437B71970C6B5E /* Build configuration list for PBXNativeTarget "Pods-chatbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961CEFAEAB7421B65950E10D /* Debug */,
+				2D852F44918362660D061C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C45DDF29D1DBEAF5E24DCE04 /* Build configuration list for PBXNativeTarget "Pods-chatbox-Parse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C103D9D5209D4E74B401C78 /* Debug */,
+				E993E82DD46938CB92DBD653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F778C74DCDDDDA212B05B21D /* Project object */;
+}
