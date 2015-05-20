@@ -10,7 +10,7 @@ import UIKit
 
 class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var messages: [String] = []
+    var messages: [PFObject] = [PFObject]()
 
     @IBOutlet weak var chatTable: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
@@ -48,18 +48,8 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         var query:PFQuery = PFQuery(className: "Message")
         query.orderByDescending("createdAt")
         query.findObjectsInBackgroundWithBlock { (objects:[AnyObject]?, error:NSError?) -> Void in
+            self.messages = objects as! [PFObject]
             
-            self.messages = [String]()
-            
-            if let objs = objects {
-                for messageObject in objs {
-                    let messageText:String? = (messageObject as! PFObject)["text"] as? String
-                    if messageText != nil {
-                        self.messages.append(messageText!)
-                    }
-                    
-                }
-            }
             self.chatTable.reloadData()
         } 
     }
@@ -69,7 +59,11 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = chatTable.dequeueReusableCellWithIdentifier("ChatCell") as! ChatCell
-        cell.messageLabel.text = messages[indexPath.row]
+        
+        var message = messages[indexPath.row]
+        println(message["user.username"])
+        cell.messageLabel.text = message["text"] as? String
+        cell.nameLabel.text = message["user.username"] as? String
         
         return cell
     }

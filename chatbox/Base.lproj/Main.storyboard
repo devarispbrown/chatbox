@@ -107,22 +107,32 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wus-r7-Jbi" id="maW-P6-GNf">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ai-cv-ban">
-                                                    <rect key="frame" x="125" y="25" width="70" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAK-rm-tOK">
+                                                    <rect key="frame" x="8" y="47" width="31" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ai-cv-ban">
+                                                    <rect key="frame" x="8" y="8" width="70" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="centerY" secondItem="1ai-cv-ban" secondAttribute="centerY" id="EKy-3d-yBO"/>
-                                                <constraint firstItem="1ai-cv-ban" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="maW-P6-GNf" secondAttribute="leading" constant="20" id="Gq9-qa-feA"/>
-                                                <constraint firstAttribute="centerX" secondItem="1ai-cv-ban" secondAttribute="centerX" id="Nw6-Gj-EAZ"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1ai-cv-ban" secondAttribute="trailing" constant="20" id="d92-AL-i8t"/>
+                                                <constraint firstAttribute="bottom" secondItem="kAK-rm-tOK" secondAttribute="bottom" constant="8" id="CBE-Bb-IRI"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1ai-cv-ban" secondAttribute="trailing" constant="8" id="F0v-sa-xym"/>
+                                                <constraint firstItem="kAK-rm-tOK" firstAttribute="top" secondItem="1ai-cv-ban" secondAttribute="bottom" constant="18" id="Jdb-RN-um4"/>
+                                                <constraint firstItem="1ai-cv-ban" firstAttribute="top" secondItem="maW-P6-GNf" secondAttribute="top" constant="8" id="P41-MG-d1d"/>
+                                                <constraint firstItem="kAK-rm-tOK" firstAttribute="leading" secondItem="1ai-cv-ban" secondAttribute="leading" id="ete-c2-yMc"/>
+                                                <constraint firstItem="1ai-cv-ban" firstAttribute="leading" secondItem="maW-P6-GNf" secondAttribute="leading" constant="8" id="hL3-tD-Dhi"/>
+                                                <constraint firstItem="kAK-rm-tOK" firstAttribute="leading" secondItem="maW-P6-GNf" secondAttribute="leading" constant="8" id="wfk-mu-82u"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="messageLabel" destination="1ai-cv-ban" id="3Lj-Op-Yah"/>
+                                            <outlet property="nameLabel" destination="kAK-rm-tOK" id="lae-Zp-Bhk"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
