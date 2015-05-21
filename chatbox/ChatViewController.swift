@@ -47,6 +47,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func retrieveMessages() {
         var query:PFQuery = PFQuery(className: "Message")
         query.orderByDescending("createdAt")
+        query.includeKey("user")
         query.findObjectsInBackgroundWithBlock { (objects:[AnyObject]?, error:NSError?) -> Void in
             self.messages = objects as! [PFObject]
             
@@ -61,9 +62,10 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = chatTable.dequeueReusableCellWithIdentifier("ChatCell") as! ChatCell
         
         var message = messages[indexPath.row]
-        println(message["user.username"])
         cell.messageLabel.text = message["text"] as? String
-        cell.nameLabel.text = message["user.username"] as? String
+        
+        var user = message["user"] as! PFUser
+        cell.nameLabel.text = user.username
         
         return cell
     }
